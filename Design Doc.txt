@@ -1,0 +1,3 @@
+Site shows current time from different time zones
+selectable timezones
+background changes with time zone change
