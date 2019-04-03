@@ -1,0 +1,82 @@
+body   {
+    background-size: 100vh;
+    margin: 0;
+    bottom: 0;
+    justify-content: center;
+}
+
+.timeZone   {
+    background-color: rgba(17, 121, 43, 0.329); 
+    list-style-type: none;
+    text-align: center;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1px;
+    color: aqua;
+}
+
+.timeZone li    {
+    display: inline-block;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.timeZone a:hover   {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.clockFace {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 350px;
+    width: 350px;
+    border-radius: 40%;
+    background: #f8f5eca6;
+    border: 2px solid black;
+}
+
+.hourHand {    
+    border: 1px;
+    outline-style: solid;
+    outline-color: blue;
+    position: absolute;
+    animation: rotate 43200s infinite linear;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    transform-origin: 100%;
+}
+
+.minHand {
+    background: rgb(36, 36, 235);
+    position: absolute;
+    animation: rotate 3600s infinite linear; 
+    top: 50%;
+    width: 50%;
+    height: 3px;
+    transform-origin: 100%;
+}
+
+.secHand {
+    background: red;
+    position: absolute;
+    animation: rotate 60s infinite linear;
+    top: 50%;
+    width: 50%;
+    height: 1px;
+    transform-origin: 100%;
+    /* transition: all 0.1s; */
+    /* transition-timing-function: cubic-bezier(0.33, 0.66, 0, 1.33); */
+}
+
+footer {
+    bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-content: center;
+    text-align: center;
+    color: rgba(99, 79, 117, 0.856);
+}

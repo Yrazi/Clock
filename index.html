@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>World Time</title>
-    <link rel="stylesheet" href="style.css" class="css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" class="css">
         
 </head>
 <body>
-    <div class="displayAnalog">
-        <div class="clockFace">
-            <div class="hourHand"></div>
-            <div class="minHand"></div>
-            <div class="secHand"></div>
-        </div>
-    </div>    
+    <ul class="timeZone">
+        <li><a href="newYork">New York</a></li>
+        <li><a href="london">London</a></li>        
+        <li><a href="japan">Japan</a></li>
+    </ul>
+    <div>
+        <p><span id="dateTime"></span></p>
+    </div>
+    <div class="clockFace">
+        <div class="hourHand"></div>
+        <div class="minHand"></div>
+        <div class="secHand"></div>
+    </div>
+
+    <footer>World Time 2019</footer>
+
+    <script src="./script.js"></script>
+
 </body>
 </html>
